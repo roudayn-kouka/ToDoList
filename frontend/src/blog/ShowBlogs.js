@@ -2,7 +2,7 @@ import axios from 'axios'
 import { useState, useEffect } from 'react'
 import {Link} from 'react-router-dom'
 
-const URI = 'http://localhost:8000/blogs/'
+const URI = 'http://frontend-loadbalancer-1685083770.us-east-1.elb.amazonaws.com/blogs/'
 
 const CompShowBlogs = () => {
     const [blogs, setBlog] = useState([])
